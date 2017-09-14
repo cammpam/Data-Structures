@@ -10,21 +10,26 @@ namespace Josies_Cat_Garden
     {
         static void Main(string[] args)
         {
+
+            for (int i = 0; i < 5; i++)
             {
-                for (int i = 0; i < 5; i++)
+                for (int j = 0; j < 5; j++)
                 {
-                    for (int j = 0; j < 5; j++)
+
+                    if ((i + j) % 2 == 0)
                     {
-                        Console.WriteLine("Catnip");
+                        Console.Write("Catnip ");
                     }
-                else
-                {
-                        Console.WriteLine("Mint ");
+
+                    else
+                    {
+                        Console.Write("Mint ");
                     }
                 }
                 Console.WriteLine();
-                Console.Read();
+
             }
+                Console.Read();
         }
     }
 }
