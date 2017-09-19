@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Linked_List
 {
+    
     class Node
     {
         public Node Next;
