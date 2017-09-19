@@ -29,7 +29,7 @@ namespace Josies_Cat_Garden
                 Console.WriteLine();
 
             }
-                Console.Read();
+            Console.Read();
         }
     }
 }
