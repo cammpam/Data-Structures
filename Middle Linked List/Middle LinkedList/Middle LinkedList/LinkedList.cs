@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Linked_List
+namespace Middle_LinkedList
 {
     public class LinkedList
     {
@@ -32,18 +32,15 @@ namespace Linked_List
 
         public void PrintAllNodes()
         {
-
-            Console.Write("HEAD =>>");
-            Node curr = head;
-            while (curr.Next != null)
+            Node slow = head;
+            Node fast = head;
+            while (fast != null && fast.Next != null)
             {
-                curr = curr.Next;
-                Console.Write(curr.Value);
-                Console.Write(" =>> ");
+                fast = fast.Next.Next;
+                slow = slow.Next;
             }
-            Console.Write("TAIL NULL");
+            Console.WriteLine(slow.Value);
         }
 
     }
-
 }
