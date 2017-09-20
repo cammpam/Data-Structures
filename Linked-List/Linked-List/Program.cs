@@ -17,6 +17,7 @@ namespace Linked_List
             lnklist.AddAtLast("Cam");
             lnklist.AddAtLast("Keeps");
             lnklist.AddAtLast("It");
+            lnklist.AddAtLast("Over");
             lnklist.AddAtLast(100);
             lnklist.PrintAllNodes();
             Console.WriteLine();
