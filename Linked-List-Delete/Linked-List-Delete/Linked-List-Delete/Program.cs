@@ -14,15 +14,16 @@ namespace Middle_LinkedList
             LinkedList lnklist = new LinkedList();
             Console.WriteLine();
 
-            lnklist.AddAtLast("Cam");
-            lnklist.AddAtLast("Keeps");
-            lnklist.AddAtLast("It");
-            lnklist.AddAtLast("Over");
-            lnklist.AddAtLast(100);
+            lnklist.AddAtLast("1");
+            lnklist.AddAtLast("2");
+            lnklist.AddAtLast("3");
+            lnklist.AddAtLast("4");
+            lnklist.AddAtLast("5");
             lnklist.PrintAllNodes();
             Console.WriteLine();
             Console.WriteLine("Please type a number to find n");
-            lnklist.NthFromEnd(Convert.ToInt32(Console.ReadLine()));
+            lnklist.deleteNode(Convert.ToInt32(Console.ReadLine()));
+            lnklist.PrintAllNodes();
             Console.WriteLine();
             Console.Read();
 

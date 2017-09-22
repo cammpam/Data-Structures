@@ -66,6 +66,38 @@ namespace Middle_LinkedList
             }
             Console.WriteLine(second.Value);
         }
+
+        public void deleteNode(int position)
+        {
+            if (head == null)
+            {
+                return;
+            }
+
+            Node temp = head;
+
+            if (position == 0)
+            {
+                head = temp.Next;
+                return;
+            }
+
+            for (int i = 0; temp != null && i < position - 1; i++)
+            {
+                temp = temp.Next;
+            }
+
+            if (temp == null || temp.Next == null)
+            {
+                return;
+            }
+
+            Node next = temp.Next.Next;
+              `   
+            temp.Next = next;
+        }
+
     }
+
 }
 
