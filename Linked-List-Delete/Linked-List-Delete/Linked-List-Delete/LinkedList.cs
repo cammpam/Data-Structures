@@ -93,7 +93,7 @@ namespace Middle_LinkedList
             }
 
             Node next = temp.Next.Next;
-              `   
+                
             temp.Next = next;
         }
 
