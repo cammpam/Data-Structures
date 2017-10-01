@@ -8,9 +8,9 @@ namespace StacksQueues
 {
     class Queues : LinkList
     {
-        public void Enqueue(object thisData)
+        public void Enqueue(object data)
         {
-            FindTail().Next = new Node(thisData);
+            tailSearch().Next = new Node(data);
         }
 
         

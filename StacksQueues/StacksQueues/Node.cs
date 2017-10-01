@@ -11,9 +11,9 @@ namespace StacksQueues
             public Node Next;
             public Object Data;
 
-            public Node(Object thisData)
+            public Node(Object data)
             {
-                Data = thisData;
+                Data = data;
                 Next = null;
             }
     }
