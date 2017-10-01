@@ -10,7 +10,7 @@ namespace StacksQueues
     {       
             public Node head = new Node(null);
 
-            public Node FindTail()
+            public Node tailSearch()
             {
                 Node current = head;
 
