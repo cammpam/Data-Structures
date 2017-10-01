@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+ 
 namespace Middle_LinkedList
 {
     public class LinkedList
@@ -13,7 +13,7 @@ namespace Middle_LinkedList
 
         // Keeps track of # of nodes
         public int Count;
-
+         
         // This is a constructor
         public LinkedList()
         {
