@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryTrees1
+namespace BinaryTreeTraversal
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //New Tree is created
-            Tree newTree = new Tree();
+            BinaryTree newTree = new BinaryTree();
 
             //Starting with the root, create leaf(1) on the left
-            newTree.Root.Left = new Leaf(1);
+            newTree.Root.Left = new Node(1);
 
             //Starting with the root, create leaf(2) on the Right
-            newTree.Root.Right = new Leaf(2);
+            newTree.Root.Right = new Node(2);
 
             //Starting with Leaf(1), create leaf(3) on the left
             newTree.Root.Left.Left = new Node(3);
@@ -30,6 +29,10 @@ namespace BinaryTrees1
 
             //Starting with Leaf(1), create leaf(6) on the right
             newTree.Root.Right.Right = new Node(6);
+
+            newTree.GetChild(newTree.Root);
+            Console.Read();
         }
     }
 }
+
