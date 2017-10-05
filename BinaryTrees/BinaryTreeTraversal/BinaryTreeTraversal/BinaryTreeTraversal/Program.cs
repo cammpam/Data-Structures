@@ -12,7 +12,7 @@ namespace BinaryTreeTraversal
         {
             BinaryTree traverseTree = new BinaryTree();
 
-            Console.WriteLine("Traversal");
+            Console.WriteLine("This is a Traversal");
 
             traverseTree.Root.Left = new Node(1);
 
