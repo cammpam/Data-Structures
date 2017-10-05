@@ -20,16 +20,16 @@ namespace BinaryTrees1
             newTree.Root.Right = new Leaf(2);
 
             //Starting with Leaf(1), create leaf(3) on the left
-            newTree.Root.Left.Left = new Leaf(3);
+            newTree.Root.Left.Left = new Node(3);
 
             //Starting with Leaf(1), create leaf(4) on the Right
-            newTree.Root.Left.Right = new Leaf(4);
+            newTree.Root.Left.Right = new Node(4);
 
             //Starting with Leaf(2), create leaf(5) on the left
-            newTree.Root.Right.Left = new Leaf(5);
+            newTree.Root.Right.Left = new Node(5);
 
             //Starting with Leaf(1), create leaf(6) on the right
-            newTree.Root.Right.Right = new Leaf(6);
+            newTree.Root.Right.Right = new Node(6);
         }
     }
 }

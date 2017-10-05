@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BinaryTrees1
 {
-    class Leaf
+    class Node
     {
         //Leaf Value
         public int Value;
-        public Leaf Left { get; set; }
-        public Leaf Right { get; set; }
+        public Node Left { get; set; }
+        public Node Right { get; set; }
 
-        public Leaf(int leafvalue)
+        public Node(int leafvalue)
         {
             Value = leafvalue;
             Left = null;
