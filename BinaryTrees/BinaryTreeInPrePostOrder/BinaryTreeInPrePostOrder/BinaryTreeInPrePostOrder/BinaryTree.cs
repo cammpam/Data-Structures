@@ -4,26 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryTreeTraversal
+namespace BinaryTreeInPrePostOrder
 {
     class BinaryTree
     {
         public Node Root;
 
         public BinaryTree() => Root = new Node(null);
-
-        public void Traverse(Node Current)
-        {
-
-            if (Current != null)
-            {
-
-                Console.Write(Current.Value);
-                Traverse(Current.Left);          
-                Traverse(Current.Right);
-
-            }
-        }
 
         public void InOrder(Node Current)
         {
@@ -38,21 +25,23 @@ namespace BinaryTreeTraversal
             }
         }
 
-        public void PostOrder(Node Current)
+    public void PostOrder(Node Current)
+    {
+
+        if (Current != null)
         {
 
-            if (Current != null)
-            {
+            PostOrder(Current.Left);
+            PostOrder(Current.Right);
+            Console.Write(Current.Value);
 
-                PostOrder(Current.Left);
-                PostOrder(Current.Right);
-                Console.Write(Current.Value);
-
-            }
         }
-
+    }
 
     }
+
+
+
     public class Node
     {
         //Leaf Value
@@ -68,4 +57,3 @@ namespace BinaryTreeTraversal
         }
     }
 }
-

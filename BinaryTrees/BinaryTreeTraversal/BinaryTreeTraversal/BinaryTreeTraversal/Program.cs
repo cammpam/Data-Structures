@@ -10,27 +10,24 @@ namespace BinaryTreeTraversal
     {
         static void Main(string[] args)
         {
-            BinaryTree newTree = new BinaryTree();
+            BinaryTree traverseTree = new BinaryTree();
 
-            //Starting with the root, create leaf(1) on the left
-            newTree.Root.Left = new Node(1);
+            Console.WriteLine("Traversal");
 
-            //Starting with the root, create leaf(2) on the Right
-            newTree.Root.Right = new Node(2);
+            traverseTree.Root.Left = new Node(1);
 
-            //Starting with Leaf(1), create leaf(3) on the left
-            newTree.Root.Left.Left = new Node(3);
+            traverseTree.Root.Right = new Node(2);
 
-            //Starting with Leaf(1), create leaf(4) on the Right
-            newTree.Root.Left.Right = new Node(4);
+            traverseTree.Root.Left.Left = new Node(3);
 
-            //Starting with Leaf(2), create leaf(5) on the left
-            newTree.Root.Right.Left = new Node(5);
+            traverseTree.Root.Left.Right = new Node(4);
 
-            //Starting with Leaf(1), create leaf(6) on the right
-            newTree.Root.Right.Right = new Node(6);
+            traverseTree.Root.Right.Left = new Node(5);
 
-            newTree.GetChild(newTree.Root);
+            traverseTree.Root.Right.Right = new Node(6);
+
+            traverseTree.Traverse(traverseTree.Root);
+
             Console.Read();
         }
     }
