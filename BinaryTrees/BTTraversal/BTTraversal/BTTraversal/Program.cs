@@ -8,19 +8,22 @@ namespace BTTraversal
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            BinaryTree newTree = new BinaryTree(12);
+            BinaryTree newTree = new BinaryTree(20);
 
 
             newTree.Add(newTree.Root, 1);
-            newTree.Add(newTree.Root, 13);
-            newTree.Add(newTree.Root, 11);
-            newTree.Add(newTree.Root, 7);
-            newTree.Add(newTree.Root, 3);
-            newTree.Add(newTree.Root, 17);
             newTree.Add(newTree.Root, 15);
+            newTree.Add(newTree.Root, 3);
+            newTree.Add(newTree.Root, 5);
+            newTree.Add(newTree.Root, 11);
+            newTree.Add(newTree.Root, 17);
+            newTree.Add(newTree.Root, 83);
 
+            
+            newTree.Min(newTree.Root);
+            Console.WriteLine();
             Console.Read();
 
 

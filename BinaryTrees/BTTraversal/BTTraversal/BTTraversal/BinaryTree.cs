@@ -23,7 +23,7 @@ namespace BTTraversal
                 if (current.Left == null)
                 {
                     current.Left = new Node(value);
-                    return;
+                    Console.WriteLine(current.Value);
                 }
                 else
                 {
@@ -48,7 +48,36 @@ namespace BTTraversal
             }
         }
 
+        public void Min(Node current)
+        {
+            current = Root;
 
+            while (current.Left != null)
+            {
+
+                if (current.Left == null)
+                {
+                    Console.WriteLine(current.Value);
+                }
+                else
+                {
+                    current.Left = current;
+                }
+
+            }
+        }
+
+        public void Max(Node current)
+        {
+            if (current.Right == null)
+            {
+                Console.WriteLine(current.Value);
+            }
+            else
+            {
+                current.Right = current;
+            }
+        }
 
 
     }
