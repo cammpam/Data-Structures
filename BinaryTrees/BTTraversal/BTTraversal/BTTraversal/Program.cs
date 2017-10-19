@@ -22,7 +22,7 @@ namespace BTTraversal
             newTree.Add(newTree.Root, 83);
 
             
-            newTree.Min(newTree.Root);
+            
             Console.WriteLine();
             Console.Read();
 
