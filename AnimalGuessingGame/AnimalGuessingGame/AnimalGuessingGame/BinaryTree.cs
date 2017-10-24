@@ -14,8 +14,9 @@ namespace AnimalGuessingGame
         {
             rootNode = new BTNode(question);
             rootNode.setYesNode(new BTNode(yesGuess));
-            rootNode.setNoNode(new BTNode(noGuess));
+            rootNode.setNoNode(new BTNode(noGues s));
         }
+
         public void query()
         {
             rootNode.query();
