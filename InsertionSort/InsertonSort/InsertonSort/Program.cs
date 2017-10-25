@@ -24,9 +24,15 @@ namespace InsertonSort
                 Console.WriteLine(c);
             }
 
+            Console.WriteLine("Merge Sort:");
+
+            PrintArray(arr);
+
+
             Console.ReadLine();
 
         }
+
         static int[] insertSort(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -56,6 +62,7 @@ namespace InsertonSort
             }
         }
 
-
     }
 }
+
+

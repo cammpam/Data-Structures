@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C2D6D49-A509-4423-8C6C-F98DC670A79B}</ProjectGuid>
+    <ProjectGuid>{2DE99C8A-019C-4EB0-8F82-7192D0949940}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InsertonSort</RootNamespace>
-    <AssemblyName>InsertonSort</AssemblyName>
+    <RootNamespace>MergeSort</RootNamespace>
+    <AssemblyName>MergeSort</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayAction.cs" />
-    <Compile Include="MergeSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
