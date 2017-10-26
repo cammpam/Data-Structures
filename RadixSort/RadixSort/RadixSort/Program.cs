@@ -10,23 +10,32 @@ namespace RadixSort
     {
         static void Main(string[] args)
         {
-            int[] originalArr = new int[] { 4, 25, 123, 45, 532, 12, 19, 6, 66 };
+            int[] originalArr = new int[] { 14, 47, 32, 37, 30, 4, 7 };
+            Console.WriteLine("Original Array: ");
 
+            foreach (var c in originalArr)
+            {
+                Console.WriteLine(c);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Radix Sort Array: ");
             foreach (var item in RadixSort(originalArr))
             {
                 Console.WriteLine(item);
             }
 
+
             Console.Read();
         }
 
-        //Does the underlying math to determine which bucket a value should go in.
+        // math operation for bucket selection
         static int DigitMath(int power, int data)
         {
             return (int)((data % Math.Pow(10, power + 1)) / Math.Pow(10, power));
         }
 
-        //Takes the original array, does the first sort and returns an array of populated buckets
+        //first sort implementation
         static List<int>[] Buckets(int[] toSort)
         {
             List<int>[] newBuckets = new List<int>[10];
@@ -41,7 +50,7 @@ namespace RadixSort
             return newBuckets;
         }
 
-        //Takes an array of populated buckets and creates a newly sorted bucket array determined by the power.
+        
         static List<int>[] SortedBuckets(int power, List<int>[] bucketSort)
         {
             List<int>[] newBuckets = new List<int>[10];
@@ -62,7 +71,7 @@ namespace RadixSort
             return newBuckets;
         }
 
-        //Converts a bucket list into the final sorted array
+        //Converts a bucket into the final array
         static int[] LastArray(List<int>[] bucketToSort, int originalArrayLength)
         {
 
@@ -82,7 +91,7 @@ namespace RadixSort
             return returnArray;
         }
 
-        //Returns the length of the largest number in the Array
+        //Finds the largest number in the Array
         static int GetMax(int[] theArray)
         {
             int max = 0;
@@ -100,7 +109,7 @@ namespace RadixSort
             return max;
         }
 
-        //Performs the sort using the above helper methods
+        //Sort method
         static int[] RadixSort(int[] toSort)
         {
             List<int>[] SortedBucket = Buckets(toSort);
